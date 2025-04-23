@@ -4,7 +4,7 @@ import os
 
 project_dir = os.path.abspath(os.path.dirname(__file__))
 cache_dir = os.path.join(project_dir, "cache")
-config_dir = os.path.join(project_dir, "cache")
+config_dir = os.path.join(project_dir, "config")
 
 def reserve_cache_file(file: str) -> str:
     os.makedirs(cache_dir, exist_ok=True)
