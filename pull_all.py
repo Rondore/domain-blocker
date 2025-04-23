@@ -21,7 +21,7 @@ class Blocklist():
         for domain in domain_list:
             try:
                 self.block_list.remove(domain)
-            except ValueError:
+            except KeyError:
                 pass
 
     def get_result(self) -> list[str]:
